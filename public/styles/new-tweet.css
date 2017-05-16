@@ -1,0 +1,57 @@
+.new-tweet {
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  margin: 0px 2em 0px 2em;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.new-tweet h2 {
+  color: #393b3c;
+  border: 1px solid #000;
+  border-width: 0 0 1px 0;
+  margin: 0;
+}
+
+.new-tweet form {
+  margin-top: 20px;
+}
+
+.new-tweet form textarea {
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+  padding: 5px;
+}
+
+.new-tweet #image-button {
+  background-image: url(https://cdn2.iconfinder.com/data/icons/communication-141/48/compose-512.png);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-color: #393b3c;
+  border: 1px solid #e6ecf0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  padding: 8px 10px 8px 32px;
+  position: relative;
+}
+
+.new-tweet #image-button:hover {
+  background-color: black;
+}
+
+.new-tweet .counter {
+  float: right;
+  padding: 10px 0 0 0;
+}
+
+.new-tweet:after {
+    content: "";
+    display: block;
+    clear: both;
+}
