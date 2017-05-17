@@ -4,10 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-function showNotificationBar () {
-
-}
-
  $(document).ready(function () {
 // function that takes in a tweet object and returns a tweet article element
 // containing the entire HTML structure of the tweet
@@ -84,7 +80,18 @@ function loadTweets () {
     }
   });
 }
-  loadTweets()
+  loadTweets();
+
+
+// click event on compose button
+$('#compose').on('click', function () {
+  $('.new-tweet').slideToggle();
+  $('.new-tweet textarea').focus();
+});
+
+// click event on compose button
+$('.new-tweet').on('blur', 'textarea' function () {
+});
 
 });
 

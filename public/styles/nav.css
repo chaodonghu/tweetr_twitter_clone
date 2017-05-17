@@ -22,3 +22,8 @@
   font-size: 2em;
   line-height: 80px;
 }
+
+.compose {
+  border: 1px solid black;
+  background-color: #00a087;
+}
