@@ -84,14 +84,12 @@ function loadTweets () {
 
 
 // click event on compose button
-$('#compose').on('click', function () {
+$('.compose').on('click', function () {
   $('.new-tweet').slideToggle();
   $('.new-tweet textarea').focus();
 });
 
 // click event on compose button
-$('.new-tweet').on('blur', 'textarea' function () {
-});
 
 });
 
