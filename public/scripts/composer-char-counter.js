@@ -4,6 +4,9 @@ $(document).ready(function () {
   var $newtweet = $('.new-tweet');
 
   $newtweet.on('input change', 'textarea', function () {
+
+    //resets error message to empty string after changing input
+    $(this).parent().find('.errorMsg').text('');
     // obtain the current length of user's input
     let lengthOfInput = $(this).val().length;
     // maximum amount of input characters is 140

@@ -4,6 +4,9 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+function showNotificationBar () {
+
+}
 
  $(document).ready(function () {
 // function that takes in a tweet object and returns a tweet article element
@@ -46,6 +49,26 @@ $('#tweet-box').on('submit', function (event) {
   event.preventDefault();
   var $enteredTweet = $(this).find('textarea').serialize();
   //console.log($enteredTweet);
+
+  let textAreaContent = $('#newtweetarea').val();
+
+  if (textAreaContent === '') {
+    $(this).parent().find('.errorMsg').text("Please enter a tweet!");
+  } else if (textAreaContent.length > 140) {
+    $(this).parent().find('.errorMsg').text("Tweet exceeded 140 characters!");
+  } else {
+    $.ajax({
+      url: '/tweets',
+      method: 'POST',
+      data: $(this).serialize(),
+      success: function () {
+        loadTweets();
+        $('#newtweetarea').val('');
+        $('.counter').html(140);
+        console.log('SUCESSFUL AJAX REQUEST');
+      }
+    });
+  }
 });
 
 // utilizes AJAX to fetch(get) data from server

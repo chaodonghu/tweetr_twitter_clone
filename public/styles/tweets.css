@@ -60,3 +60,9 @@
   color: #244751;
   visibility: visible;
 }
+
+.errorMsg {
+  margin-left: 10px;
+  color: red;
+  font-size: 12px;
+}
