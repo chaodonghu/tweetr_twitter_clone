@@ -27,10 +27,26 @@ body {
 
 main {
   display: block;
-  width: 450px;
+  width: 50%;
   background-color: #fff;
   margin: 80px auto 0px auto;
   height: auto;
   padding: 10px;
 
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  main {
+    width: 50%;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 480px) {
+  main {
+    width: %;
+    }
 }
