@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
-    <!-- Responsive Design -->
-    <meta name="viewport" content="width = device-width">
 
-    <!-- External CSS -->
-      <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-      <!-- Import font-family -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
-      <!-- Import font awesome glyphs -->
-       <script src="https://use.fontawesome.com/c0031c74b7.js"></script>
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width = device-width">
 
-    <!-- App CSS -->
-      <!-- Layout CSS-->
-      <link rel="stylesheet" href="/styles/css/layout.css" type="text/css" />
-      <!-- External navigation CSS -->
-      <link rel="stylesheet" href="/styles/css/nav.css" type="text/css" />
-      <!-- New Tweet CSS -->
-      <link rel="stylesheet" href="/styles/css/new-tweet.css" type="text/css" />
-      <!-- Tweet CSS -->
-      <link rel="stylesheet" href="/styles/css/tweets.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <!-- Import font-family -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+  <!-- Import font awesome glyphs -->
+  <script src="https://use.fontawesome.com/c0031c74b7.js"></script>
 
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  <!-- App CSS -->
+  <!-- Layout CSS-->
+  <link rel="stylesheet" href="/styles/css/layout.css" type="text/css" />
+  <!-- External navigation CSS -->
+  <link rel="stylesheet" href="/styles/css/nav.css" type="text/css" />
+  <!-- New Tweet CSS -->
+  <link rel="stylesheet" href="/styles/css/new-tweet.css" type="text/css" />
+  <!-- Tweet CSS -->
+  <link rel="stylesheet" href="/styles/css/tweets.css" type="text/css" />
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+  <!-- External JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-  </head>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/app.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-  <body>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
-      <img class="logo" src="/images/bird2.png">
-      <span class="header">Tweeter</span>
-      <button type ="button" class="compose">
-        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-        Compose
+</head>
+
+<body>
+
+  <!-- Top nav bar (fixed) -->
+  <nav id="nav-bar">
+    <img class="navbar-brand logo" src="/images/bird2.png">
+    <span class="header">Tweeter</span>
+
+    <div class="hidden-xs">
+      <button class="compose">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Compose
       </button>
-    </nav>
+    </div>
 
+    <div class="visible-xs">
+      <span class="compose-xs">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </span>
+</div>
+</nav>
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="container-fluid">
 
       <!-- New Tweet Input Form -->
       <section class="new-tweet">

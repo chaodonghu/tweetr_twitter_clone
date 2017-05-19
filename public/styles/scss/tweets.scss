@@ -71,12 +71,44 @@
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 968px) {
+  .tweet header .user {
+    font-size: 150%;
+    float: left;
+  }
+  .tweet header .handle {
+    display: inline;
+    white-space: nowrap;
+    font-size: 70%;
+    line-height: none;
+    margin: none;
+  }
+}
 
 /* Tablets */
 
 @media screen and (max-width: 768px) {
+  .tweet header {
+    height: 50px;
+  }
+  .tweet header .avatar {
+    width: 40px;
+    height: 40px;
+  }
   .tweet header .user {
-    font-size: 100%;
+    font-size: 1.2em;
+  }
+  .tweet header .handle {
+    line-height: 0px;
+    float: left;
+    margin: 5px;
+    font-size: 0.7em;
+  }
+  .tweet footer {
+    font-size: 0.7em;
+  }
+  .tweet div {
+    font-size: 0.7em;
   }
 }
 
@@ -98,7 +130,6 @@
     line-height: 0px;
     float: left;
     margin: 5px;
-    float: left;
     font-size: 0.7em;
   }
   .tweet footer {

@@ -4,7 +4,7 @@
   height: 80px;
   width: 100%;
   background-color: white;
-  padding: 0 2em 0 2em;
+  padding: 0 2em;
   display: inline-block;
   z-index: 1000;
   border: 1px solid #bfbfbf;
@@ -31,3 +31,21 @@
     cursor: pointer; }
   #nav-bar .compose:hover {
     background-color: #393b3c; }
+
+.compose-xs {
+  float: right;
+  margin: 10px;
+  height: 60px;
+  width: 50px;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: black;
+  cursor: pointer; }
+  .compose-xs .fa {
+    position: relative;
+    top: 18px;
+    right: -18px; }
+
+.compose-xs:hover {
+  background-color: #393b3c; }
