@@ -41,6 +41,7 @@ $(document).ready(function() {
   // function takes an array of tweet objects and appends
   // each one to the #tweets-container
   function renderTweets(tweets) {
+    $('#tweets-container').empty();
     for (tweet in tweets) {
       let tweetObject = tweets[tweet];
       let $tweet = createTweetElement(tweetObject);
@@ -53,7 +54,6 @@ $(document).ready(function() {
   $('#tweet-box').on('submit', function(event) {
     event.preventDefault();
     var $enteredTweet = $(this).find('textarea').serialize();
-    //console.log($enteredTweet);
 
     let textAreaContent = $('#newtweetarea').val();
 
@@ -70,7 +70,6 @@ $(document).ready(function() {
           loadTweets();
           $('#newtweetarea').val('');
           $('.counter').html(140);
-          console.log('SUCESSFUL AJAX REQUEST');
         }
       });
     }
@@ -84,7 +83,6 @@ $(document).ready(function() {
       data: $(this).serialize(),
       dataType: 'JSON',
       success: function(data) {
-        //console.log('Success: ', data);
         renderTweets(data);
       }
     });
@@ -105,10 +103,3 @@ $(document).ready(function() {
   });
 
 });
-
-// run the jquery
-// $('#tweet-box').on('submit', function (e) {
-//   e.preventDefault();
-//   console.log($('textarea').val());
-//   $('#tweets-list').append(`<li>${$('textarea').val()}</li>`)
-// })

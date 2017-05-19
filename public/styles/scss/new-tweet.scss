@@ -55,3 +55,9 @@
   display: block;
   clear: both;
 }
+
+@media screen and (max-width: 480px) {
+  .new-tweet h2 {
+    font-size: 1.5em;
+  }
+}

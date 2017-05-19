@@ -1,7 +1,7 @@
 .tweet {
   border: 1px solid #bfbfbf;
   border-radius: 5px;
-  margin: 5px 2em 0px 2em;
+  margin: 5px 2em 0;
   background-color: #fff;
   opacity: 0.7;
   word-wrap: break-word;
@@ -45,9 +45,9 @@
     padding: 8px 5px;
 
     i {
-    float: right;
-    margin: 0 5px 0 0;
-    visibility: hidden;
+      float: right;
+      margin: 0 5px 0 0;
+      visibility: hidden;
     }
   }
 }
@@ -55,7 +55,6 @@
 .tweet:hover {
   opacity: 1;
 }
-
 
 .tweet:hover i {
   color: #244751;
@@ -67,75 +66,71 @@
   color: red;
   font-size: 12px;
 }
-
-
 /* MEDIA QUERIES */
-
 @media screen and (max-width: 968px) {
-  .tweet header .user {
-    font-size: 150%;
-    float: left;
-  }
-  .tweet header .handle {
-    display: inline;
-    white-space: nowrap;
-    font-size: 70%;
-    line-height: none;
-    margin: none;
+  .tweet {
+    header {
+      position: relative;
+
+      .user {
+        position: relative;
+        top: -18px;
+        font-size: 200%;
+      }
+
+      .handle {
+        position: absolute;
+        float: none;
+        top: 19px;
+        left: 64px;
+        font-size: 100%;
+        line-height: none;
+        margin: none;
+      }
+    }
   }
 }
-
 /* Tablets */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
   .tweet header {
-    height: 50px;
-  }
-  .tweet header .avatar {
-    width: 40px;
-    height: 40px;
-  }
-  .tweet header .user {
-    font-size: 1.2em;
-  }
-  .tweet header .handle {
-    line-height: 0px;
-    float: left;
-    margin: 5px;
-    font-size: 0.7em;
-  }
-  .tweet footer {
-    font-size: 0.7em;
-  }
-  .tweet div {
-    font-size: 0.7em;
+    .user {
+      font-size: 90%;
+    }
+
+    .handle {
+      font-size: 70%;
+    }
   }
 }
-
-
 /* Mobiles */
+@media screen and (max-width: 520px) {
+  .tweet {
+    header {
+      height: 50px;
 
-@media screen and (max-width: 480px) {
-  .tweet header {
-    height: 50px;
-  }
-  .tweet header .avatar {
-    width: 40px;
-    height: 40px;
-  }
-  .tweet header .user {
-    font-size: 0.7em;
-  }
-  .tweet header .handle {
-    line-height: 0px;
-    float: left;
-    margin: 5px;
-    font-size: 0.7em;
-  }
-  .tweet footer {
-    font-size: 0.7em;
-  }
-  .tweet div {
-    font-size: 0.7em;
+      .avatar {
+        width: 40px;
+        height: 40px;
+      }
+
+      .user {
+        font-size: 0.5em;
+        top: -13px;
+      }
+
+      .handle {
+        top: 3px;
+        left: 43px;
+        font-size: 0.5em;
+      }
+    }
+
+    footer {
+      font-size: 0.5em;
+    }
+
+    div {
+      font-size: 0.5em;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .tweet {
   border: 1px solid #bfbfbf;
   border-radius: 5px;
-  margin: 5px 2em 0px 2em;
+  margin: 5px 2em 0;
   background-color: #fff;
   opacity: 0.7;
   word-wrap: break-word; }
@@ -51,50 +51,43 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 968px) {
-  .tweet header .user {
-    font-size: 150%;
-    float: left; }
-  .tweet header .handle {
-    display: inline;
-    white-space: nowrap;
-    font-size: 70%;
-    line-height: none;
-    margin: none; } }
+  .tweet header {
+    position: relative; }
+    .tweet header .user {
+      position: relative;
+      top: -18px;
+      font-size: 200%; }
+    .tweet header .handle {
+      position: absolute;
+      float: none;
+      top: 19px;
+      left: 64px;
+      font-size: 100%;
+      line-height: none;
+      margin: none; } }
 
 /* Tablets */
 @media screen and (max-width: 768px) {
-  .tweet header {
-    height: 50px; }
-  .tweet header .avatar {
-    width: 40px;
-    height: 40px; }
   .tweet header .user {
-    font-size: 1.2em; }
+    font-size: 90%; }
   .tweet header .handle {
-    line-height: 0px;
-    float: left;
-    margin: 5px;
-    font-size: 0.7em; }
-  .tweet footer {
-    font-size: 0.7em; }
-  .tweet div {
-    font-size: 0.7em; } }
+    font-size: 70%; } }
 
 /* Mobiles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .tweet header {
     height: 50px; }
-  .tweet header .avatar {
-    width: 40px;
-    height: 40px; }
-  .tweet header .user {
-    font-size: 0.7em; }
-  .tweet header .handle {
-    line-height: 0px;
-    float: left;
-    margin: 5px;
-    font-size: 0.7em; }
+    .tweet header .avatar {
+      width: 40px;
+      height: 40px; }
+    .tweet header .user {
+      font-size: 0.5em;
+      top: -13px; }
+    .tweet header .handle {
+      top: 3px;
+      left: 43px;
+      font-size: 0.5em; }
   .tweet footer {
-    font-size: 0.7em; }
+    font-size: 0.5em; }
   .tweet div {
-    font-size: 0.7em; } }
+    font-size: 0.5em; } }
