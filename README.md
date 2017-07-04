@@ -15,3 +15,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+Start MONGODB with sudo mongod
+In another terminal window type
+1. mongo
+2. show dbs
+3. use Tweeter
+4. db.test.insert({"message":"hello world"})
+5. show dbs
+6. 
