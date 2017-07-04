@@ -7,6 +7,7 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Final Product
 !['Tweetr'](/images/tweeter.gif)
+`User can compose a tweet and sees tweets other users have made`
 
 ## Getting Started
 
