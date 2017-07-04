@@ -6,7 +6,7 @@ Tweeter is a simple, single-page Twitter clone.
 * https://dong-hu-tweeter.herokuapp.com/
 
 ## Final Product
-!['Tweetr'](/images/tweeter.gif)
+!['Tweetr'](./assets/tweeter.gif)
 `User can compose a tweet and sees tweets other users have made`
 
 ## Getting Started
