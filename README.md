@@ -1,6 +1,6 @@
 # Tweeter - Twitter Clone
 
-Tweeter is a simple, single-page Twitter clone.
+​An application that replicates Twitter's core functionalities, Tweeter allows users to compose and view tweets on a single page.
 
 ## Demo
 * https://dong-hu-tweeter.herokuapp.com/
